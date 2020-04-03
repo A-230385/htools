@@ -1,0 +1,40 @@
+CONTENIDOS APRENDIDOS DURANTE EL PERIODO DE APRENDIZAJE EN HACKING.
+
+
+- LINUX BASICO
+- METASPLOIT BASICO
+- USO DE MODULOS
+- USO	 NMAP Y SCRIPT:
+    EXAMPLE,  nmap –script=(script to use)
+_SETTING AN IP STATIC:
+    inet eth0 
+    adress: xxxx
+    gateway: xxxx
+    broadcast: xxxx
+    
+    /etc/resolv.conf:
+        nameserver xxxx
+        nameserver xxxx
+
+HERRAMIENTAS DE ESCANEO
+    nikto -h (host target)
+    netcat (nc) -lvp (target)
+    whois (escaneo de dominios y direcciones ip)
+    netstat -atnp ()
+
+CONECTAR A WEBDAV MEDIANTE SERVIDOR XAMPP
+    cadaver http://ip_target/webdav
+        credentials by default
+        username: wampp
+        password: xampp
+
+CAPTURANDO TRAFICO CON WIRESHARK
+    PASOS:
+	1- echo 1 > proc/sys/net/ipv4/ip_forward
+	2- arpspoof -i interfaz de red) -t (ip objetivo) (ip local o de la otra maquina)
+	3- empezar a capturar trafico con wireshark
+
+CAMBIAR DIRECCION IP DE UN SITIO WEB USANDO DNSSPOOFING
+    command:
+	dnsspoof i (interfaz de red) -f (documento con ip local y direccion del sitio)
+
